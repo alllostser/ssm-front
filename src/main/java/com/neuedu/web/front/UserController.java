@@ -30,7 +30,7 @@ public class UserController  {
     }
 
     /**
-     * 用户注册
+     * 用户注册模块
      * @param user
      * @return
      */
