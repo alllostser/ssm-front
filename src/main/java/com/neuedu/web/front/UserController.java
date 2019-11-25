@@ -13,12 +13,26 @@ import javax.servlet.http.HttpSession;
 public class UserController  {
     @Autowired
     private UserService service;
+
+    /**
+     * 用户登录模块
+     * @param username
+     * @param password
+     * @param session
+     * @return
+     */
     @RequestMapping(value = "/login.do",method = RequestMethod.POST)
     public serverResponse doLogin(String username, String password, HttpSession session){
         serverResponse rs = service.selectByUsernameAndPassword(username, password);
         session.setAttribute("user", rs.getData());
         return rs;
     }
+
+    /**
+     * 用户注册模块
+     * @param user
+     * @return
+     */
     @RequestMapping(value = "/register.do",method = RequestMethod.POST)
     public serverResponse doRegister(Users user){
         serverResponse rs = service.insertUser(user);
