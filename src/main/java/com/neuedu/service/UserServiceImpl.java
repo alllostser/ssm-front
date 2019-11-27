@@ -1,7 +1,7 @@
 package com.neuedu.service;
 
 import com.neuedu.commons.serverResponse;
-import com.neuedu.dao.UsersMapper;
+import com.neuedu.dao.UsersDao;
 import com.neuedu.pojo.Users;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 @Service
 public class UserServiceImpl implements UserService  {
     @Resource
-    private UsersMapper dao;
+    private UsersDao dao;
     @Override
     public Users selectById(Integer id) {
         return dao.selectByPrimaryKey(id);

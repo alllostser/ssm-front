@@ -28,7 +28,6 @@ public class UserController  {
         session.setAttribute("user", rs.getData());
         return rs;
     }
-
     /**
      * 用户注册模块
      * @param user
@@ -39,4 +38,5 @@ public class UserController  {
         serverResponse rs = service.insertUser(user);
         return rs;
     }
+
 }

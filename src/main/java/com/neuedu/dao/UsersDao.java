@@ -3,7 +3,7 @@ package com.neuedu.dao;
 import com.neuedu.pojo.Users;
 import org.apache.ibatis.annotations.Param;
 
-public interface UsersMapper {
+public interface UsersDao {
     Users selectByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 
     int deleteByPrimaryKey(Integer id);

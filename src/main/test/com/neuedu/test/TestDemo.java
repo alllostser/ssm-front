@@ -1,11 +1,9 @@
 package com.neuedu.test;
 
-import com.neuedu.dao.UsersMapper;
+import com.neuedu.dao.UsersDao;
 import com.neuedu.pojo.Users;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -18,7 +16,7 @@ import java.util.List;
 @ContextConfiguration(locations = "classpath:ApplicationContext.xml")
 public class TestDemo {
     @Resource
-    private UsersMapper dao;
+    private UsersDao dao;
 
     @Test
     public void text1(){

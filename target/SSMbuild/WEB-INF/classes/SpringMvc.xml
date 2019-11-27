@@ -22,7 +22,7 @@
         <mvc:interceptor>
             <mvc:mapping path="/**/*"/>
             <mvc:exclude-mapping path="/**/login.do"/>
-            <mvc:exclude-mapping path="/**/register.do"/>
+<!--            <mvc:exclude-mapping path="/**/register.do"/>-->
             <bean class="com.neuedu.commons.ServletInteceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
