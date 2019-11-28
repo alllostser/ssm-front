@@ -18,14 +18,14 @@
         http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
 ">
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**/*"/>
-            <mvc:exclude-mapping path="/**/login.do"/>
+<!--    <mvc:interceptors>-->
+<!--        <mvc:interceptor>-->
+<!--            <mvc:mapping path="/**/*"/>-->
+<!--            <mvc:exclude-mapping path="/**/login.do"/>-->
 <!--            <mvc:exclude-mapping path="/**/register.do"/>-->
-            <bean class="com.neuedu.commons.ServletInteceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+<!--            <bean class="com.neuedu.commons.ServletInteceptor"/>-->
+<!--        </mvc:interceptor>-->
+<!--    </mvc:interceptors>-->
 <!--    开启注解驱动-->
     <mvc:annotation-driven>
         <mvc:message-converters>

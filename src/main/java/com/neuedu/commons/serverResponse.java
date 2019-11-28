@@ -14,6 +14,7 @@ public class serverResponse<T> {
         this.code = code;
     }
 
+
     public serverResponse(Integer code, String message) {
         this.code = code;
         this.message = message;

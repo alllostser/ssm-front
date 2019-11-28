@@ -4,15 +4,20 @@ import com.neuedu.pojo.Users;
 import org.apache.ibatis.annotations.Param;
 
 public interface UsersDao {
+    //登录
     Users selectByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    int insert(Users record);  //注册
+
+    int selectByUsernameOrEmailOrPhone(@Param("type") String type,@Param("value") String value);
+
+    Users selectByPrimaryKey(Integer id);
 
     int deleteByPrimaryKey(Integer id);
 
-    int insert(Users record);
 
     int insertSelective(Users record);
 
-    Users selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(Users record);
 

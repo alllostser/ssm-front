@@ -1,21 +1,29 @@
-package com.neuedu.service;
+package com.neuedu.service.Impl;
 
 import com.neuedu.commons.serverResponse;
 import com.neuedu.dao.UsersDao;
 import com.neuedu.pojo.Users;
+import com.neuedu.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service
-public class UserServiceImpl implements UserService  {
+public class UserServiceImpl implements UserService {
     @Resource
     private UsersDao dao;
+
     @Override
     public Users selectById(Integer id) {
         return dao.selectByPrimaryKey(id);
     }
 
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
     @Override
     public serverResponse selectByUsernameAndPassword(String username, String password) {
         if (username == null || "".equals(username)){
@@ -35,6 +43,12 @@ public class UserServiceImpl implements UserService  {
         serverResponse rs = serverResponse.serverSuccess("登录成功", user);
         return rs;
     }
+
+    /**
+     * 用户注册
+     * @param user
+     * @return
+     */
     @Override
     public serverResponse insertUser(Users user) {
         if (user.getUsername() == null || "".equals(user.getUsername())){
@@ -50,7 +64,8 @@ public class UserServiceImpl implements UserService  {
             return serverResponse.serverFailed("请输入手机号！");
         }
         //只是一种判断方法，还有根据用户名统计条数来判断的方法
-        Users users = dao.selectByUsernameAndPassword(user.getUsername(),null);
+        //运用了动态sql
+        Users users = dao.selectByUsernameAndPassword(user.getUsername(), null);
         if(users != null){
             return serverResponse.serverFailed("用户名已存在");
         }
