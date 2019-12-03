@@ -1,8 +1,9 @@
 package com.neuedu.commons;
 
 
+import java.io.Serializable;
 
-public class serverResponse<T> {
+public class serverResponse<T> implements Serializable {
     private Integer code;
     private String message;
     private T data;
@@ -58,6 +59,10 @@ public class serverResponse<T> {
         return new serverResponse(ResponseCode.Code.ERROR.getCode(), message);
     }
 
+    public static serverResponse serverFailed(Integer code, String message) {
+        return new serverResponse(code,message);
+    }
+
     public Integer getCode() {
         return code;
     }
@@ -90,4 +95,6 @@ public class serverResponse<T> {
                 ", data=" + data +
                 '}';
     }
+
+
 }

@@ -18,6 +18,7 @@
         http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
 ">
+<!--    配置拦截器-->
 <!--    <mvc:interceptors>-->
 <!--        <mvc:interceptor>-->
 <!--            <mvc:mapping path="/**/*"/>-->
@@ -26,6 +27,8 @@
 <!--            <bean class="com.neuedu.commons.ServletInteceptor"/>-->
 <!--        </mvc:interceptor>-->
 <!--    </mvc:interceptors>-->
+
+
 <!--    开启注解驱动-->
     <mvc:annotation-driven>
         <mvc:message-converters>

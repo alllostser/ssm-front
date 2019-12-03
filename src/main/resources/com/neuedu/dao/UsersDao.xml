@@ -10,24 +10,21 @@
     <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="type" jdbcType="INTEGER" property="type" />
     <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="question" property="question"/>
+    <result column="anwser" property="anwser"/>
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
     <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
     <result column="login_number" jdbcType="INTEGER" property="loginNumber" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, username, password, nickname, phone, email, type, status, create_date, update_date, 
+    id, username, password, nickname, phone, email, question,anwser,type, status, create_date, update_date,
     login_number
   </sql>
   <select id="selectByUsernameAndPassword" resultMap="BaseResultMap" >
     select
     <include refid="Base_Column_List" />
     from neuedu_users
-    <where>
-        username=#{username}
-      <if test="password != null and ''!= password">
-        and password=#{password}
-      </if>
-    </where>
+    where username=#{username} and password=#{password}
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -41,10 +38,10 @@
   </delete>
   <insert id="insert" parameterType="com.neuedu.pojo.Users">
     insert into neuedu_users (id, username, password, 
-      nickname, phone, email, create_date,
+      nickname, phone, email,question,anwser, create_date,
       update_date)
     values (null, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
-      #{nickname,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{nickname,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{question},#{anwser},
       now(), now())
   </insert>
   <insert id="insertSelective" parameterType="com.neuedu.pojo.Users">
@@ -123,36 +120,22 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.neuedu.pojo.Users">
     update neuedu_users
     <set>
-      <if test="username != null">
-        username = #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        password = #{password,jdbcType=VARCHAR},
-      </if>
       <if test="nickname != null">
         nickname = #{nickname,jdbcType=VARCHAR},
       </if>
       <if test="phone != null">
         phone = #{phone,jdbcType=VARCHAR},
       </if>
+      <if test="question != null">
+        question=#{question},
+      </if>
+      <if test="anwser != null">
+        anwser=#{anwser},
+      </if>
       <if test="email != null">
         email = #{email,jdbcType=VARCHAR},
       </if>
-      <if test="type != null">
-        type = #{type,jdbcType=INTEGER},
-      </if>
-      <if test="status != null">
-        status = #{status,jdbcType=INTEGER},
-      </if>
-      <if test="createDate != null">
-        create_date = #{createDate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updateDate != null">
-        update_date = #{updateDate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="loginNumber != null">
-        login_number = #{loginNumber,jdbcType=INTEGER},
-      </if>
+        update_date =now()
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -170,4 +153,21 @@
       login_number = #{loginNumber,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+<!--  检查参数是否有效-->
+  <select id="selectByUsernameOrEmailOrPhone" resultType="integer">
+    select
+    count(id)
+    from neuedu_users
+    <where>
+      <if test="type=='username'">
+       username=#{value}
+      </if>
+      <if test="type=='email'">
+        email=#{value}
+      </if>
+      <if test="type=='phone'">
+        phone=#{value}
+      </if>
+    </where>
+  </select>
 </mapper>

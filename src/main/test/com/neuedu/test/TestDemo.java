@@ -22,7 +22,6 @@ public class TestDemo {
     public void text1(){
         Users users = dao.selectByUsernameAndPassword("admin",null);
         System.out.println(users);
-
     }
     @Test
     public void text2(){
