@@ -1,5 +1,6 @@
 package com.neuedu.service.Impl;
 
+import com.neuedu.commons.ResponseCode;
 import com.neuedu.commons.serverResponse;
 import com.neuedu.dao.UsersDao;
 import com.neuedu.pojo.Users;
@@ -126,6 +127,19 @@ public class UserServiceImpl implements UserService {
             return serverResponse.serverFailed("更新失败");
         }
         return serverResponse.serverSuccess("更新成功");
+    }
+
+    @Override
+    public serverResponse forgetGetQuestion(String username) {
+        if (username == null || "".equals(username)){
+            return serverResponse.serverFailed("参数不能为空");
+        }
+        int i = dao.selectByUsernameOrEmailOrPhone("username", username);
+        if (i<=0){
+            return serverResponse.serverFailed("用户名不存在");
+        }
+        String s = dao.selectByUsername(username);
+        return serverResponse.serverSuccess(s);
     }
 }
 

@@ -22,4 +22,6 @@ public interface UsersDao {
     int updateByPrimaryKeySelective(Users record);
 
     int updateByPrimaryKey(Users record);
+//根据用户名查找用户密码问题
+    String selectByUsername(String username);
 }

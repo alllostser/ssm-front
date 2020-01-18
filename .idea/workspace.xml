@@ -7,6 +7,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec7dfd3f-96f9-49ec-a64b-22fe8c6a80d0" name="Default Changelist" comment="调整了登录返回为Vo对象">
+      <change afterPath="$PROJECT_DIR$/src/main/test/com/neuedu/test2/Test2Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/META-INF/SSMbuild.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/commons/ResponseCode$UserEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/dao/ProductDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/dao/ProductDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/dao/UsersDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/dao/UsersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/pojo/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/pojo/vo/UsersVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/utils/MD5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/utils/TimeUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/lib/joda-time-2.9.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/SSMbuild.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/commons/ResponseCode$UserEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/ProductDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/ProductDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/UsersDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/UsersDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/pojo/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/pojo/vo/UsersVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/utils/MD5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/neuedu/utils/TimeUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/neuedu/test2/Test2Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/UsersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/web/front/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/web/front/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/UsersDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/dao/UsersDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/SpringMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/SpringMvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/commons/ResponseCode$Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/commons/ResponseCode$Code.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/commons/ResponseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMbuild/WEB-INF/classes/com/neuedu/commons/ResponseCode.class" afterDir="false" />
@@ -96,7 +129,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/neuedu/utils" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/实验五" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -378,7 +411,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.012303486" />
+          <option name="contentProportion" value="0.020491803" />
           <treeState>
             <expand>
               <path>
@@ -388,7 +421,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -445,7 +478,21 @@
       <workItem from="1575282983051" duration="23000" />
       <workItem from="1575283019800" duration="2474000" />
       <workItem from="1575339559029" duration="11000" />
-      <workItem from="1575361605118" duration="9178000" />
+      <workItem from="1575361605118" duration="9292000" />
+      <workItem from="1575899043513" duration="245000" />
+      <workItem from="1577116579727" duration="59000" />
+      <workItem from="1577116692779" duration="19000" />
+      <workItem from="1577117755427" duration="79000" />
+      <workItem from="1577200460394" duration="10000" />
+      <workItem from="1577263083921" duration="59000" />
+      <workItem from="1577882230110" duration="11000" />
+      <workItem from="1579331553455" duration="519000" />
+      <workItem from="1579332169413" duration="1207000" />
+      <workItem from="1579334008861" duration="115000" />
+      <workItem from="1579334340830" duration="465000" />
+      <workItem from="1579334826962" duration="13000" />
+      <workItem from="1579334858122" duration="65000" />
+      <workItem from="1579334937773" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="基于ssm+ajax商城前台项目,前后端分离">
       <created>1574679192786</created>
@@ -524,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575375278208</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="调整了登录返回为Vo对象">
+      <created>1575375929551</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575375929551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,19 +657,23 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="基于ssm+ajax商城前台项目,前后端分离" />
-    <MESSAGE value="调整了登录返回为Vo对象" />
     <MESSAGE value="完善用户模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善用户模块" />
+    <MESSAGE value="调整了登录返回为Vo对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整了登录返回为Vo对象" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1575374231629">
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1579336745137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1575374231629" />
+    <state x="574" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579336745137" />
     <state x="449" y="141" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575283001407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="141" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1575283001407" />
+    <state x="421" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579335409060">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="421" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1579335409060" />
     <state x="499" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575200842985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -624,65 +682,69 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="170" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1575174172589" />
-    <state x="385" y="9" key="CommitChangelistDialog2" timestamp="1575375896609">
+    <state x="385" y="9" key="CommitChangelistDialog2" timestamp="1575375927709">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575375896609" />
-    <state width="1445" height="375" key="GridCell.Tab.0.bottom" timestamp="1575375869216">
+    <state x="385" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575375927709" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1575899057309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.0.center" timestamp="1575375869216">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575899057309" />
+    <state width="1433" height="371" key="GridCell.Tab.0.bottom" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.0.left" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.0.center" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.0.right" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.0.left" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.1.bottom" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.0.right" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.1.center" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.1.bottom" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.1.left" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.1.center" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.1.right" timestamp="1575375869216">
+    <state width="1433" height="371" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.1.left" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575375869216" />
-    <state width="1445" height="375" key="GridCell.Tab.2.bottom" timestamp="1575375869217">
+    <state width="1433" height="371" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.1.right" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575375869217" />
-    <state width="1445" height="375" key="GridCell.Tab.2.center" timestamp="1575375869217">
+    <state width="1433" height="371" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.2.bottom" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1575375869217" />
-    <state width="1445" height="375" key="GridCell.Tab.2.left" timestamp="1575375869217">
+    <state width="1433" height="371" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.2.center" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1575375869217" />
-    <state width="1445" height="375" key="GridCell.Tab.2.right" timestamp="1575375869217">
+    <state width="1433" height="371" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.2.left" timestamp="1577117833899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1445" height="375" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1575375869217" />
+    <state width="1433" height="371" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
+    <state width="1433" height="371" key="GridCell.Tab.2.right" timestamp="1577117833899">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1433" height="371" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1577117833899" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1575174176092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575174176092" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1575375281560">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1575375931541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575375281560" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575375931541" />
   </component>
 </project>

@@ -11,4 +11,6 @@ public interface UserService {
     serverResponse checkValid(String str, String type);
 
     serverResponse updateInformation(Users users);
+
+    serverResponse forgetGetQuestion(String username);
 }

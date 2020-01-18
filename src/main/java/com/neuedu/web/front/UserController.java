@@ -4,6 +4,7 @@ import com.neuedu.commons.ResponseCode;
 import com.neuedu.commons.serverResponse;
 import com.neuedu.pojo.Users;
 import com.neuedu.pojo.vo.UsersVo;
+import com.neuedu.service.Impl.UserServiceImpl;
 import com.neuedu.service.UserService;
 import com.neuedu.utils.TimeUtils;
 import com.sun.xml.internal.bind.v2.model.core.ID;
@@ -138,8 +139,12 @@ public class UserController {
      */
     @RequestMapping(value = "/forget_get_question.do", method = RequestMethod.GET)
     public serverResponse forgetGetQuestion(String username) {
-        return serverResponse.serverSuccess();
+        return service.forgetGetQuestion(username);
     }
+
+
+
+
 
     /**
      * 退出登录
